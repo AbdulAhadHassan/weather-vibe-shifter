@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 220 33% 98%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -24,7 +24,7 @@
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
-    --radius: 1rem;
+    --radius: 1.5rem;
   }
 
   * {
@@ -32,17 +32,20 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased overflow-x-hidden min-h-screen;
+    @apply bg-[#F1F0FB] text-foreground antialiased overflow-x-hidden min-h-screen;
+    background-image: linear-gradient(to bottom right, #F1F0FB, #E5DEFF);
   }
 
   .glass {
-    @apply bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-lg;
+    @apply bg-white/20 backdrop-blur-xl border border-white/30 rounded-3xl shadow-sm;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
   }
 
   .weather-background {
-    @apply fixed top-0 left-0 w-full h-full -z-10 transition-opacity duration-1000;
+    @apply fixed top-0 left-0 w-full h-full -z-10 transition-all duration-1000;
     background-size: cover;
     background-position: center;
+    opacity: 0.8;
   }
 }
 

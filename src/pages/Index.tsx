@@ -3,7 +3,6 @@ import { useState } from "react";
 import WeatherSearch from "@/components/WeatherSearch";
 import WeatherDisplay from "@/components/WeatherDisplay";
 import { useToast } from "@/components/ui/use-toast";
-import { cn } from "@/lib/utils";
 
 interface WeatherData {
   temp: number;
@@ -13,7 +12,7 @@ interface WeatherData {
   city: string;
 }
 
-const WEATHER_API_KEY = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key
+const WEATHER_API_KEY = "YOUR_API_KEY";
 const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 const Index = () => {
@@ -28,16 +27,22 @@ const Index = () => {
     switch (condition.toLowerCase()) {
       case "clear":
         return timeOfDay === "day" 
-          ? "url('/photo-1501854140801-50d01698950b')"
-          : "url('/photo-1470813740244-df37b8c1edcb')";
+          ? "linear-gradient(to bottom right, #E3F2FD, #90CAF9)"
+          : "linear-gradient(to bottom right, #1A237E, #283593)";
       case "clouds":
-        return "url('/photo-1470071459604-3b5ec3a7fe05')";
+        return "linear-gradient(to bottom right, #ECEFF1, #B0BEC5)";
       case "rain":
       case "drizzle":
+        return "linear-gradient(to bottom right, #546E7A, #78909C)";
       case "thunderstorm":
-        return "url('/photo-1500375592092-40eb2168fd21')";
+        return "linear-gradient(to bottom right, #263238, #37474F)";
+      case "snow":
+        return "linear-gradient(to bottom right, #E0E0E0, #FAFAFA)";
+      case "mist":
+      case "fog":
+        return "linear-gradient(to bottom right, #CFD8DC, #B0BEC5)";
       default:
-        return "url('/photo-1501854140801-50d01698950b')";
+        return "linear-gradient(to bottom right, #F1F0FB, #E5DEFF)";
     }
   };
 
@@ -84,7 +89,7 @@ const Index = () => {
       )}
       <div className="w-full max-w-md space-y-8 z-10">
         <h1 className="text-4xl font-light text-center mb-8 animate-slide-in">
-          Weather App
+          Weather Forecast
         </h1>
         <WeatherSearch onSearch={handleSearch} isLoading={isLoading} />
         {weather && <WeatherDisplay weather={weather} />}
