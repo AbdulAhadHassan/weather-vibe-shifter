@@ -92,7 +92,25 @@ const Index = () => {
           Weather Forecast
         </h1>
         <WeatherSearch onSearch={handleSearch} isLoading={isLoading} />
-        {weather && <WeatherDisplay weather={weather} />}
+        {isLoading ? (
+          <div className="glass p-10 animate-pulse space-y-4">
+            <div className="h-8 w-32 bg-white/20 rounded-full mx-auto"></div>
+            <div className="h-16 w-24 bg-white/20 rounded-full mx-auto"></div>
+            <div className="h-6 w-40 bg-white/20 rounded-full mx-auto"></div>
+            <div className="grid grid-cols-2 gap-4 pt-6">
+              <div className="space-y-2">
+                <div className="h-4 w-16 bg-white/20 rounded-full mx-auto"></div>
+                <div className="h-6 w-12 bg-white/20 rounded-full mx-auto"></div>
+              </div>
+              <div className="space-y-2">
+                <div className="h-4 w-16 bg-white/20 rounded-full mx-auto"></div>
+                <div className="h-6 w-12 bg-white/20 rounded-full mx-auto"></div>
+              </div>
+            </div>
+          </div>
+        ) : (
+          weather && <WeatherDisplay weather={weather} />
+        )}
       </div>
     </div>
   );
