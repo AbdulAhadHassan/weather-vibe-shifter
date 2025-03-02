@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -58,6 +57,13 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backdropBlur: {
+        none: "0",
+        sm: "4px",
+        md: "8px",
+        lg: "16px",
+        xl: "24px",
       },
       keyframes: {
         "accordion-down": {

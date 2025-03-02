@@ -40,6 +40,10 @@
     @apply bg-white/20 backdrop-blur-xl border border-white/30 rounded-3xl shadow-sm;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
   }
+  .blur-glass {
+    @apply bg-white/20 backdrop-blur-lg rounded-lg shadow-lg p-10 max-w-md mx-auto space-y-8 border border-white/30;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  }
 
   .weather-background {
     @apply fixed top-0 left-0 w-full h-full -z-10 transition-all duration-1000;
