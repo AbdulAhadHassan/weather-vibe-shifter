@@ -3,7 +3,7 @@
 
 A sleek and modern **weather forecasting app** that provides **real-time weather updates, city search suggestions, dynamic backgrounds, and severe weather alerts**. Built with **React and TailwindCSS**, this app offers a beautiful and responsive UI with a **glassmorphism** effect.
 
-![Weather App](/weather-app-banner.png)  
+![Weather App](/public/weather-app-banner.png)  
 
 ## 🚀 Features
 - ✅ **Live Weather Data** - Fetches real-time weather from OpenWeatherMap API
@@ -70,4 +70,4 @@ git push origin my-feature
 ---
 
 🚀 **Made with ❤️ using React, vite, and TailwindCSS!**  
-```
+
