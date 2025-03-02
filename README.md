@@ -1,69 +1,73 @@
-# Welcome to your Lovable project
 
-## Project info
+# 🌤️ Weather App - React + Next.js + TailwindCSS
 
-**URL**: https://lovable.dev/projects/1a0aaf17-ef32-47df-878b-d7e5c16b292e
+A sleek and modern **weather forecasting app** that provides **real-time weather updates, city search suggestions, dynamic backgrounds, and severe weather alerts**. Built with **React and TailwindCSS**, this app offers a beautiful and responsive UI with a **glassmorphism** effect.
 
-## How can I edit this code?
+![Weather App](/weather-app-banner.png)  
 
-There are several ways of editing your application.
+## 🚀 Features
+- ✅ **Live Weather Data** - Fetches real-time weather from OpenWeatherMap API
+- ✅ **City Auto-Suggestions** - Smart search that suggests cities as you type  
+- ✅ **Dynamic Backgrounds** - Changes based on weather and time (day/night)  
+- ✅ **Severe Weather Alerts** - Displays warnings for storms, heavy rain, or extreme conditions  
+- ✅ **Glassmorphism UI** - Beautiful, blurred glass effect using TailwindCSS  
+- ✅ **Fully Responsive** - Works on mobile, tablet, and desktop  
+- ✅ **Fast & Lightweight** - Optimized with Next.js for blazing-fast performance  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1a0aaf17-ef32-47df-878b-d7e5c16b292e) and start prompting.
+## 🔧 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+### **1️⃣ Clone the Repository**
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
 ```
 
-**Edit a file directly in GitHub**
+### **2️⃣ Install Dependencies**
+```sh
+npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### **3️⃣ Setup API Key**
+Create a `.env.local` file in the root directory and add your OpenWeatherMap API key:
+```sh
+NEXT_PUBLIC_WEATHER_API_KEY=your_openweathermap_api_key
+```
 
-**Use GitHub Codespaces**
+### **4️⃣ Run the Development Server**
+```sh
+npm run dev
+```
+Now open **[http://localhost:3000](http://localhost:3000)** in your browser. 🎉  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🛠️ Tech Stack
+- **Frontend:** React, TypeScript  
+- **Styling:** TailwindCSS, shadcn 
+- **API:** OpenWeatherMap API  
+- **Deployment:** Vercel  
 
-This project is built with .
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
+## 🌍 Deployment
+The app is live on **Vercel**! 🚀  
+🔗 **Live Demo:** [https://weather-vibe-shifter.vercel.app/)
 
-Simply open [Lovable](https://lovable.dev/projects/1a0aaf17-ef32-47df-878b-d7e5c16b292e) and click on Share -> Publish.
+---
 
-## I want to use a custom domain - is that possible?
+## 🌟 Contributing
+Want to improve this project? Fork it, create a new branch, and submit a PR!  
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+```sh
+git checkout -b my-feature
+git commit -m "Added new feature"
+git push origin my-feature
+```
+
+---
+
+🚀 **Made with ❤️ using React, vite, and TailwindCSS!**  
+```
